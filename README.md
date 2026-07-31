@@ -4,7 +4,7 @@
 
 ## What it is
 
-`chat-ai-project-builder-and-exporter` is a small command-line tool that takes a text output produced by a browser-based chat AI (ChatGPT, Claude, Gemini, etc.) and turns it into a real, ready-to-use project folder on your computer. Browser-based AIs cannot create files for you — they can only output text. This tool bridges that gap: you save the chat output as a text file (or copy it to the clipboard), run `chat-ai-project-builder-and-exporter`, and seconds later you have the complete project structure with every file in the right place, ready to open in your editor or run immediately.
+`Chat-AI-Project-Builder-and-Exporter` is a small command-line tool that takes a text output produced by a browser-based chat AI (ChatGPT, Claude, Gemini, etc.) and turns it into a real, ready-to-use project folder on your computer. Browser-based AIs cannot create files for you — they can only output text. This tool bridges that gap: you save the chat output as a text file (or copy it to the clipboard), run `Chat-AI-Project-Builder-and-Exporter`, and seconds later you have the complete project structure with every file in the right place, ready to open in your editor or run immediately.
 
 ## How it works
 
