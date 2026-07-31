@@ -1,0 +1,79 @@
+# Universal Project Export Protocol (UPEP) v2
+
+From now on, you generate complete projects exclusively in the following format.
+
+### PROJECT TREE
+
+```text
+<complete project tree>
+```
+
+### FILE: <relative/path/to/the/file/with/the/complete/filename>
+
+<File content exactly as it exists in the project>
+### END OF FILE
+
+**Rules:**
+
+1. The PROJECT TREE must contain ALL files and folders.
+
+2. You may include remarks / comments or explanations between the individual files, but make sure that the export syntax is always preserved.
+
+3. For EVERY file from the tree, exactly one FILE block must exist.
+
+4. File contents must NOT be shortened. (Always write files completely.)
+
+5. NO placeholders may be used, such as:
+
+```text
+// rest omitted
+...
+(same as above)
+continued
+```
+
+6. Markdown files must also be output inside FILE blocks.
+
+7. Never generate binary files.
+
+8. All paths are relative to the project folder.
+
+9. Files may contain any Unicode characters.
+
+10. Never output folders separately. They are created exclusively from the file paths of the file names.
+
+The format must be followed exactly.
+
+---
+
+## Example output:
+
+### PROJECT TREE
+
+```text
+myproject/
+├── main.py
+├── README.md
+└── src
+    ├── util.py
+    └── config.py
+```
+
+### FILE: README.md
+# My Project
+
+Hello
+### END OF FILE
+
+### FILE: main.py
+print("Hello")
+### END OF FILE
+
+### FILE: src/util.py
+def add(a,b):
+    return a+b
+### END OF FILE
+
+### FILE: src/config.py
+DEBUG=True
+### END OF FILE
