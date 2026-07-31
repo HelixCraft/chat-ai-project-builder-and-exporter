@@ -1,4 +1,4 @@
-# chat-ai-project-builder-and-exporter
+# Chat AI Project Builder and Exporter
 
 > **Turn chat-AI output into real project files on your disk.**
 
