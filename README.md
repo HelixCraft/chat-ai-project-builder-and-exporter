@@ -160,4 +160,4 @@ myproject/
 
 ## License
 
-MIT — free to use, modify, and share.
+Licensed under the [GNU General Public License v3.0](LICENSE) — free to use, modify, and share, provided that derivative works are also released under GPLv3.
